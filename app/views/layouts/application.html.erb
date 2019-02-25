@@ -10,8 +10,59 @@
     <%#= stylesheet_pack_tag 'application', media: 'all' %> <!-- Uncomment if you import CSS in app/javascript/packs/application.js -->
   </head>
   <body>
+    <!-- NAVBAR -->
+
+    <nav class="nav">
+            <div class="container">
+                <div class="logo">
+                    <a href="#">___Mon Pti Vélo__</a>
+                </div>
+                <div id="mainListDiv" class="main_list">
+                    <div class="navlinks">
+                        <div class="ssnavlinks"><a href="#" class="btn">Rent a bike</a></div>
+                        <div class="ssnavlinks"><a href="#"class="btn">Rent my bike</a></div>
+                  <div class="dropdown">
+                      <img src='https://kitt.lewagon.com/placeholder/users/cveneziani' class="avatar dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"/>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                          <a class="dropdown-item" href="#"><i class="fas fa-user"></i> Account</a>
+                          <a class="dropdown-item" href="#"><i class="fas fa-cogs"></i> Settings</a>
+                          <a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt"></i> Log out</a>
+                        </div>
+                </div>
+
+                </div>
+
+
+                <span class="navTrigger">
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                </span>
+            </div>
+        </nav>
+    <!-- Fin NAVBAR -->
+
+
     <%= yield %>
     <%= javascript_include_tag 'application' %>
     <%= javascript_pack_tag 'application' %>
+
+
+
+<!-- Jquery needed -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
+
+<!-- Function used to shrink nav bar removing paddings and adding black background -->
+    <script>
+        $(window).scroll(function() {
+            if ($(document).scrollTop() > 50) {
+                $('.nav').addClass('affix');
+                console.log("OK");
+            } else {
+                $('.nav').removeClass('affix');
+            }
+        });
+    </script>
   </body>
 </html>
