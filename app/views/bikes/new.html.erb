@@ -7,6 +7,8 @@
     <%= f.input :description, placeholder: 'your description', error: 'Description is mandatory' %>
     <%= f.input :address, placeholder: 'your address', error: 'Address is mandatory' %>
     <%= f.input :zipcode, placeholder: 'your zipcode', error: 'zipcode is mandatory' %>
+    <%= f.input :photo %>
+    <%= f.input :photo_cache, as: :hidden %>
     <%= f.submit "add bike", class: "btn btn-primary" %>
     <% end %>
 </div>
