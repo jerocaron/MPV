@@ -8,6 +8,7 @@ class BikesController < ApplicationController
   end
 
   def create
+    raise
     @bike = Bike.new(bike_params)
     if @bike.save
       redirect_to bike_path(@bike)
