@@ -1,0 +1,20 @@
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h1><%= @bike.category %></h1>
+        <h2><%= @bike.description %></h2>
+        <%= cl_image_tag @article.photo, height: 300, width: 400, crop: :fill %>
+      </div>
+    </div>
+  </div>
+
+    <div class="row">
+      <div class="col-md-4 col-md-offset-4">
+        <div class="centered">
+          <%= link_to "Back to list", bikes_path, class: "btn btn-primary"%>
+        </div>
+      </div>
+    </div>
+
+
