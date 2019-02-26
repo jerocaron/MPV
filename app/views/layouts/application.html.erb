@@ -12,8 +12,195 @@
     <%#= stylesheet_pack_tag 'application', media: 'all' %> <!-- Uncomment if you import CSS in app/javascript/packs/application.js -->
   </head>
   <body>
+    <!-- NAVBAR -->
+
+<!--     <nav class="nav">
+            <div class="container">
+                <div class="logo">
+                    <a href="#">___Mon Pti Vélo__</a>
+                </div>
+                <div id="mainListDiv" class="main_list">
+                    <div class="navlinks">
+                        <div class="ssnavlinks"><a href="#" class="btn">Rent a bike</a></div>
+                        <div class="ssnavlinks"><a href="#"class="btn">Rent my bike</a></div>
+                  <div class="dropdown">
+                      <img src='https://kitt.lewagon.com/placeholder/users/cveneziani' class="avatar dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"/>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                          <a class="dropdown-item" href="#"><i class="fas fa-user"></i> Account</a>
+                          <a class="dropdown-item" href="#"><i class="fas fa-cogs"></i> Settings</a>
+                          <a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt"></i> Log out</a>
+                        </div>
+                </div>
+
+                </div>
+
+
+                <span class="navTrigger">
+                    <i></i>
+                    <i></i>
+                    <i></i>
+                </span>
+            </div>
+        </nav> -->
+    <!-- Fin NAVBAR -->
+<nav id="topNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#first"><i class="fas fa-bicycle"></i></i>__MonPtiVélo</a>
+            </div>
+            <div class="navbar-collapse collapse" id="bs-navbar">
+                <ul class="nav navbar-nav navbar-right">
+                  <form class="navbar-form navbar-left">
+                    <div class="form-group">
+                      <input type="text" class="form-control" placeholder="Rechercher">
+                    </div>
+                    <button type="submit" class="btn btn-default"><i class="fas fa-search"></i></button>
+                  </form>
+                  <li>
+                      <a class="page-scroll" href="#four">Loue un vélo</a>
+                  </li>
+                  <li>
+                      <a class="page-scroll" href="#four">Loue ton vélo</a>
+                  </li>
+<!--                     <li>
+                        <a class="page-scroll" data-toggle="modal" title="A free Bootstrap video landing theme" href="#aboutModal">About</a>
+                    </li> -->
+                  <li class="nav-item dropdown">
+                    <img class="avatar dropdown-toggle" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" src="https://kitt.lewagon.com/placeholder/users/ssaunier" />
+                    <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                      <li class="dropdown-item"><a href="#">Log In</a></li>
+                      <li class="dropdown-item"><a href="#">Mon compte</a></li>
+                      <li class="dropdown-item"><a href="#">Login Out</a></li>
+                    </ul>
+                  </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+<!--
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Messages</a>
+      </li>
+      <li class="nav-item dropdown">
+        <img class="avatar dropdown-toggle" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" src="https://kitt.lewagon.com/placeholder/users/ssaunier" />
+        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+        </div>
+      </li>
+    </ul>
+  </div> -->
+
+<!--     <header id="first">
+        <div class="header-content">
+            <div class="inner">
+                <h1 class="cursive">Simple, One Page Design</h1>
+                <h4>A free landing page theme with video background</h4>
+                <hr>
+                <a href="#video-background" id="toggleVideo" data-toggle="collapse" class="btn btn-primary btn-xl">Toggle Video</a> &nbsp; <a href="#one" class="btn btn-primary btn-xl page-scroll">Get Started</a>
+            </div>
+        </div>
+        <video autoplay="" loop="" class="fillWidth fadeIn wow collapse in" data-wow-delay="0.5s" poster="https://s3-us-west-2.amazonaws.com/coverr/poster/Traffic-blurred2.jpg" id="video-background">
+            <source src="https://s3-us-west-2.amazonaws.com/coverr/mp4/Traffic-blurred2.mp4" type="video/mp4">Your browser does not support the video tag. I suggest you upgrade your browser.
+        </video>
+    </header> -->
+
+
+<!--     <section id="last">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="margin-top-0 wow fadeIn">Get in Touch</h2>
+                    <hr class="primary">
+                    <p>We love feedback. Fill out the form below and we'll get back to you as soon as possible.</p>
+                </div>
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                    <form class="contact-form row">
+                        <div class="col-md-4">
+                            <label></label>
+                            <input type="text" class="form-control" placeholder="Name">
+                        </div>
+                        <div class="col-md-4">
+                            <label></label>
+                            <input type="text" class="form-control" placeholder="Email">
+                        </div>
+                        <div class="col-md-4">
+                            <label></label>
+                            <input type="text" class="form-control" placeholder="Phone">
+                        </div>
+                        <div class="col-md-12">
+                            <label></label>
+                            <textarea class="form-control" rows="9" placeholder="Your message here.."></textarea>
+                        </div>
+                        <div class="col-md-4 col-md-offset-4">
+                            <label></label>
+                            <button type="button" data-toggle="modal" data-target="#alertModal" class="btn btn-primary btn-block btn-lg">Send <i class="ion-android-arrow-forward"></i></button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+
+<!--     <div id="aboutModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <h2 class="text-center">Landing Zero Theme</h2>
+            <h5 class="text-center">
+                A free, responsive landing page theme built by BootstrapZero.
+            </h5>
+            <p class="text-justify">
+                This is a single-page Bootstrap template with a sleek dark/grey color scheme, accent color and smooth scrolling.
+                There are vertical content sections with subtle animations that are activated when scrolled into view using the jQuery WOW plugin. There is also a gallery with modals
+                that work nicely to showcase your work portfolio. Other features include a contact form, email subscribe form, multi-column footer. Uses Questrial Google Font and Ionicons.
+            </p>
+            <p class="text-center"><a href="http://www.bootstrapzero.com">Download at BootstrapZero</a></p>
+            <br/>
+            <button class="btn btn-primary btn-lg center-block" data-dismiss="modal" aria-hidden="true"> OK </button>
+          </div>
+        </div>
+        </div>
+    </div>
+    <div id="alertModal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <div class="modal-body">
+            <h2 class="text-center">Nice Job!</h2>
+            <p class="text-center">You clicked the button, but it doesn't actually go anywhere because this is only a demo.</p>
+            <p class="text-center"><a href="http://www.bootstrapzero.com">Learn more at BootstrapZero</a></p>
+            <br/>
+            <button class="btn btn-primary btn-lg center-block" data-dismiss="modal" aria-hidden="true">OK <i class="ion-android-close"></i></button>
+          </div>
+        </div>
+        </div>
+    </div> -->
+
+
     <%= yield %>
     <%= javascript_include_tag 'application' %>
     <%= javascript_pack_tag 'application' %>
+
+
+
+        <!--scripts loaded here from cdn for performance -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+
   </body>
 </html>
