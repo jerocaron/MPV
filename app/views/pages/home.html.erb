@@ -11,5 +11,7 @@
   </div>
   <div class="footer-copyright">
     Grab your <i class="fas fa-bicycle"></i> and ride like a pro!
+    <%= link_to "Sign in", new_user_session_path, class: "btn btn-primary"%>
+    <%= link_to "Sign out", destroy_user_session_path, class: "btn btn-primary", method: :delete %>
   </div>
 </div>
