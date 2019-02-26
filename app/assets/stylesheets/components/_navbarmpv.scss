@@ -75,11 +75,19 @@ body {
 /* Home section */
 
 .home {
-    width: 100%;
-    height: 100vh;
-    background-image: url(https://images.unsplash.com/photo-1478679998273-573b05e79e0c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80);
-    background-position: center bottom;
+  width: 100%;
+  height: 100vh;
+  background-image: url(https://images.unsplash.com/photo-1478679998273-573b05e79e0c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80);
+  background-position: center bottom;
   background-size:cover;
+  display : flex;
+}
+
+.home > h1 {
+  text-align: center;
+  align-items: center;
+  justify-content : center;
+
 }
 
 .navTrigger {
