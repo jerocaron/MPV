@@ -3,14 +3,15 @@
 
   <ul>
   <% @bikes.each do |bike| %>
-      <li><%= link_to bike.category, bikes_path(bike.id)%>
+      <li><%= link_to bike.category, bike_path(bike.id)%>
         </li>
   <% end %>
   </ul>
 
     <%= link_to "Create bike", new_bike_path, class: "btn btn-primary" %>
-</div>
-
-
+    <%= link_to "Sign out", destroy_user_session_path, class: "btn btn-primary", method: :delete %>
 
 </div>
+
+
+
