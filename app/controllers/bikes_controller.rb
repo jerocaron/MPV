@@ -1,6 +1,13 @@
 class BikesController < ApplicationController
   def index
-    @bikes = Bike.all
+    @bikes = Bike.where.not(latitude: nil, longitude: nil)
+
+    @markers = @bikes.map do |bike|
+      {
+        lng: flat.longitude,
+        lat: flat.latitude
+      }
+    end
   end
 
   def new
