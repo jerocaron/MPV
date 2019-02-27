@@ -63,35 +63,35 @@ bike_attributes = [
 {
     marque: "Peugeot",
     description: "Le vélo de mon grand père; un vrai bijou !",
-    address: "#{Faker::Address.street_address}, #{Faker::Address.city}",
+    address: "2 Avenue des Saules, 59160 Lille",
     category: "Route",
     age: "39"
 },
 {
     marque: "Btwin",
     description: "Le vélo de ma grand mère !",
-    address: "#{Faker::Address.street_address}, #{Faker::Address.city}",
+    address: "374 Rue Léon Gambetta, 59000 Lille",
     category: "Vtc",
     age: "39"
 },
 {
     marque: "Btwin",
     description: "Le vélo de mon fils !",
-    address: "#{Faker::Address.street_address}, #{Faker::Address.city}",
+    address: "77 Rue Philippe-Laurent Roland, 59000 Lille",
     category: "Bmx",
     age: "39"
 },
 {
     marque: "Peugeot",
     description: "Mon vélo de compétition hors du commun !",
-    address: "#{Faker::Address.street_address}, #{Faker::Address.city}",
+    address: "Port Fluvial, 4ème Rue, 59000 Lille",
     category: "VTT",
     age: "39"
 },
 {
     marque: "Peugeot",
     description: "Le vélo de mon grand père; un vrai bijou !",
-    address: "#{Faker::Address.street_address}, #{Faker::Address.city}",
+    address: "54 Rue du Général de la Bourdonnaye, 59000 Lille",
     category: "Route",
     age: "39"
 }
