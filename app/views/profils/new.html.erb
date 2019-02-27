@@ -1,0 +1,12 @@
+<div class="container">
+  <h1>Profil </h1>
+    <%= simple_form_for(@profil) do |f| %>
+    <%= f.input :first_name, placeholder: 'your first name', error: 'First name is mandatory' %>
+    <%= f.input :last_name, placeholder: 'your last name', error: 'Last name is mandatory' %>
+    <%= f.input :address, placeholder: 'your address', error: 'Address is mandatory' %>
+    <%= f.submit "post", class: "btn btn-primary" %>
+    <%= link_to "Change your password", edit_user_registration_path %>
+    <% end %>
+</div>
+
+
