@@ -16,77 +16,47 @@
     <%= stylesheet_pack_tag 'application', media: 'all' %> <!-- Uncomment if you import CSS in app/javascript/packs/application.js -->
   </head>
   <body>
-    <!-- NAVBAR -->
-
-<!--     <nav class="nav">
-            <div class="container">
-                <div class="logo">
-                    <a href="#">___Mon Pti Vélo__</a>
-                </div>
-                <div id="mainListDiv" class="main_list">
-                    <div class="navlinks">
-                        <div class="ssnavlinks"><a href="#" class="btn">Rent a bike</a></div>
-                        <div class="ssnavlinks"><a href="#"class="btn">Rent my bike</a></div>
-                  <div class="dropdown">
-                      <img src='https://kitt.lewagon.com/placeholder/users/cveneziani' class="avatar dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"/>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                          <a class="dropdown-item" href="#"><i class="fas fa-user"></i> Account</a>
-                          <a class="dropdown-item" href="#"><i class="fas fa-cogs"></i> Settings</a>
-                          <a class="dropdown-item" href="#"><i class="fas fa-sign-out-alt"></i> Log out</a>
-                        </div>
-                </div>
-
-                </div>
-
-
-                <span class="navTrigger">
-                    <i></i>
-                    <i></i>
-                    <i></i>
-                </span>
-            </div>
-        </nav> -->
-    <!-- Fin NAVBAR -->
-<nav id="topNav" class="navbar navbar-default navbar-fixed-top">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand page-scroll" href="#first"><i class="fas fa-bicycle"></i></i>__MonPtiVélo</a>
-            </div>
-            <div class="navbar-collapse collapse" id="bs-navbar">
-                <ul class="nav navbar-nav navbar-right">
-                  <form class="navbar-form navbar-left">
-                    <div class="form-group">
-                      <input type="text" class="form-control" placeholder="Rechercher">
-                    </div>
-                    <button type="submit" class="btn btn-default"><i class="fas fa-search"></i></button>
-                  </form>
-                  <li>
-                      <a class="page-scroll" href="#rentabike">Loue un vélo</a>
-                  </li>
-                  <li>
-                      <a class="page-scroll" href="#four">Loue ton vélo</a>
-                  </li>
-<!--                     <li>
-                        <a class="page-scroll" data-toggle="modal" title="A free Bootstrap video landing theme" href="#aboutModal">About</a>
-                    </li> -->
-                  <li class="nav-item dropdown">
-                    <img class="avatar dropdown-toggle" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" src="https://kitt.lewagon.com/placeholder/users/ssaunier" />
-                    <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                      <li class="dropdown-item"><a href="#">Log In</a></li>
-                      <li class="dropdown-item"><a href="#">Mon compte</a></li>
-                      <li class="dropdown-item"><a href="#">Login Out</a></li>
-                    </ul>
-                  </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+<!--     <div id="main"> -->
+      <nav id="topNav" class="navbar navbar-default navbar-fixed-top">
+          <div class="container-fluid">
+              <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand page-scroll" href="#"><i class="fas fa-bicycle"></i></i>__MonPtiVélo</a>
+              </div>
+              <div class="navbar-collapse collapse" id="bs-navbar">
+                  <ul class="nav navbar-nav navbar-right">
+                    <form class="navbar-form navbar-left">
+                      <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Rechercher">
+                      </div>
+                      <button type="submit" class="btn btn-default"><i class="fas fa-search"></i></button>
+                    </form>
+                    <li>
+                        <a class="page-scroll" href="#rentabike">Loue un vélo</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#">Loue ton vélo</a>
+                    </li>
+  <!--                     <li>
+                          <a class="page-scroll" data-toggle="modal" title="A free Bootstrap video landing theme" href="#aboutModal">About</a>
+                      </li> -->
+                    <li class="nav-item dropdown">
+                      <img class="avatar dropdown-toggle" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" src="https://kitt.lewagon.com/placeholder/users/ssaunier" />
+                      <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                        <li class="dropdown-item"><a href="#">Log In</a></li>
+                        <li class="dropdown-item"><a href="#">Mon compte</a></li>
+                        <li class="dropdown-item"><a href="#">Login Out</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+              </div>
+          </div>
+      </nav>
 
 
 <!--
@@ -196,10 +166,21 @@
 
 
     <%= yield %>
+
+    <div class="footer">
+      <div class="footer-links">
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <%= link_to "Nous contacter", root_path, class: "btn btn-primary nouscontacter" %>
+      </div>
+      <div class="footer-copyright">
+        Grab your <i class="fas fa-bicycle"></i> and ride like a pro!
+      </div>
+    </div>
+<!--   </div> -->
     <%= javascript_include_tag 'application' %>
     <%= javascript_pack_tag 'application' %>
-
-
 
         <!--scripts loaded here from cdn for performance -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>

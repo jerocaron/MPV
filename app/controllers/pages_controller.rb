@@ -9,7 +9,5 @@ class PagesController < ApplicationController
         lat: bike.latitude
       }
     end
-
-    p @markers
   end
 end
