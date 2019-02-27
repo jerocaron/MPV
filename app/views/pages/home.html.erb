@@ -34,3 +34,17 @@
     </div>
   </div>
 </section>
+
+<div class="footer">
+  <div class="footer-links">
+    <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fab fa-facebook"></i></a>
+    <a href="#"><i class="fab fa-twitter"></i></a>
+    <%= link_to  "Nous contacter", root_path, class: "btn btn-primary nouscontacter" %>
+  </div>
+  <div class="footer-copyright">
+    Grab your <i class="fas fa-bicycle"></i> and ride like a pro!
+    <%= link_to "Sign in", new_user_session_path, class: "btn btn-primary"%>
+    <%= link_to "Sign out", destroy_user_session_path, class: "btn btn-primary", method: :delete %>
+  </div>
+</div>
