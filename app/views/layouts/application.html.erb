@@ -165,10 +165,21 @@
 
 
     <%= yield %>
+
+  <div class="footer">
+    <div class="footer-links">
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <%= link_to "Nous contacter", root_path, class: "btn btn-primary nouscontacter" %>
+    </div>
+    <div class="footer-copyright">
+      Grab your <i class="fas fa-bicycle"></i> and ride like a pro! 
+    </div> 
+  </div>
+
     <%= javascript_include_tag 'application' %>
     <%= javascript_pack_tag 'application' %>
-
-
 
         <!--scripts loaded here from cdn for performance -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
