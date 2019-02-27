@@ -1,0 +1,26 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <h1><%= @profil.first_name %></h1>
+            <h1><%= @profil.last_name %></h1>
+            <p><%= @profil.address %></p>
+            <div class="container">
+                <% @profil.bikes.each do |bike| %>
+                    <%= image_tag "#{bike.photo}" %>
+                <% end %>
+            </div>
+            <p><%= current_user.email %></p>
+            <p><%= @profil.tel %></p>
+            <p><%= @profil.iban %></p>
+            <p><%= @profil.photo %></p>
+        </div>
+    </div>
+</div>
+
+    <div class="row">
+        <div class="col-md-4 col-md-offset-4">
+            <div class="centered">
+                <%= link_to "Back Home", root_path, class: "btn btn-primary"%>
+            </div>
+        </div>
+    </div>
