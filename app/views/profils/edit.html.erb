@@ -8,8 +8,10 @@
         <%= f.input :address, label: "Adresse", placeholder: @profil.address, error: "L'address est requise" %>
         <%= f.input :photo %>
         <%= f.submit "Editer", class: "btn btn-primary" %>
-        <%= link_to "Modifier mon mot de passe", edit_user_registration_path, class: "btn btn-secondary" %>
+        <%= link_to "Modifier mon mot de passe", edit_user_registration_path, class: "btn btn-primary" %>
         <% end %>
+        <%= link_to "Retour à mon profil", profil_path, class: "btn btn-primary btn-ghost buttonprofile"%>
+
     </div>
   </div>
 </div>
