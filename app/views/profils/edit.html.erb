@@ -1,12 +1,17 @@
-<div class="container">
-  <h1>Your Profil</h1>
-    <%= simple_form_for(@profil) do |f| %>
-    <%= f.input :first_name, placeholde: @profil.first_name, error: 'First name is mandatory' %>
-    <%= f.input :last_name, placeholder: @profil.last_name, error: 'Last name is mandatory' %>
-    <%= f.input :address, placeholder: @profil.address, error: 'Address is mandatory' %>
-    <%= f.submit "post", class: "btn btn-primary" %>
-    <%= link_to "Change your password", edit_user_registration_path %>
-    <% end %>
+<div class="container editprofile">
+  <div class="row">
+    <div class="col-xs-12 col-lg-12">
+      <h1>Editer mon profil</h1>
+        <%= simple_form_for(@profil) do |f| %>
+        <%= f.input :first_name, label: "Prénom", placeholde: @profil.first_name, error: "Le prénom est requis" %>
+        <%= f.input :last_name, label: "Nom", placeholder: @profil.last_name, error: "Le nom est requis" %>
+        <%= f.input :address, label: "Adresse", placeholder: @profil.address, error: "L'address est requise" %>
+        <%= f.input :photo %>
+        <%= f.submit "Editer", class: "btn btn-primary" %>
+        <%= link_to "Modifier mon mot de passe", edit_user_registration_path, class: "btn btn-secondary" %>
+        <% end %>
+    </div>
+  </div>
 </div>
 
 
