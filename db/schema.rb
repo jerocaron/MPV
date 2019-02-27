@@ -12,6 +12,7 @@
 
 ActiveRecord::Schema.define(version: 2019_02_27_154016) do
 
+
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -26,6 +27,8 @@ ActiveRecord::Schema.define(version: 2019_02_27_154016) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "photo"
+    t.float "latitude"
+    t.float "longitude"
     t.index ["profil_id"], name: "index_bikes_on_profil_id"
   end
 
