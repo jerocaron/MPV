@@ -99,7 +99,3 @@ bike_attributes = [
 
 Bike.create!(bike_attributes)
 puts 'Finished!'
-
-
-
-
