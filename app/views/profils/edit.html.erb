@@ -1,17 +1,18 @@
 <div class="container editprofile">
   <div class="row">
     <div class="col-xs-12 col-lg-12">
-      <h1>Editer mon profil</h1>
+      <h1 class="margin-top-0 wow fadeIn text-center">Editer mon profil</h1>
+      <hr class="primary">
         <%= simple_form_for(@profil) do |f| %>
         <%= f.input :first_name, label: "Prénom", placeholder: @profil.first_name, error: "Le prénom est requis" %>
         <%= f.input :last_name, label: "Nom", placeholder: @profil.last_name, error: "Le nom est requis" %>
         <%= f.input :address, label: "Adresse", placeholder: @profil.address, error: "L'address est requise" %>
         <%= f.input :photo %>
-        <%= f.submit "Editer", class: "btn btn-primary" %>
-        <%= link_to "Modifier mon mot de passe", edit_user_registration_path, class: "btn btn-primary" %>
+        <div class="text-center"><%= f.submit "Editer", class: "btn btn-primary" %>
+        <%= link_to "Modifier mon mot de passe", edit_user_registration_path, class: "btn btn-primary" %></div>
         <% end %>
         <%= link_to "Retour à mon profil", profil_path, class: "btn btn-primary btn-ghost buttonprofile"%>
-
+        <div class="text-center"><%= link_to "Supprimer mon compte", edit_user_registration_path, class: "btn btn-secondary text-center"%></div>
     </div>
   </div>
 </div>
