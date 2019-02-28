@@ -1,1 +1,1 @@
-import { datePicker } from 'booking'
+import './booking.js'
