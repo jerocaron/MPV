@@ -16,4 +16,3 @@ if ((startDateInput != null) && (endDateInput != null)) {
 }
 
 
-
