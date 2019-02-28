@@ -1,12 +1,14 @@
 .btn-ghost {
   color: #0a0a0a;
-  border: 1px solid #0a0a0a;
+  border: 2px solid #0a0a0a !important;
   border-color: #0a0a0a;
   padding: 8px 24px;
   border-radius: 50px;
   font-weight: 700;
   opacity: 0.6;
   transition: opacity 0.3s ease;
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
 .btn-ghost:hover {
   opacity: 1;
@@ -17,7 +19,8 @@
   width: 100%;
 }
 .btn-primary:active:focus {
-  background-color: #041c51;
+  background-color: #696868;
+  border-color: #696868;
 }
 
 .btn-default {
@@ -30,7 +33,9 @@
     transition: all .35s;
 }
 
-
+.fullwidthbutton{
+  width: 100%;
+}
 
 .btn-default:hover,
 .btn-default:focus,
