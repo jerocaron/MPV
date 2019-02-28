@@ -65,6 +65,7 @@ bike_attributes = [
     description: "Le vélo de mon grand père; un vrai bijou !",
     address: "2 Avenue des Saules, 59160 Lille",
     category: "Route",
+    photo: "https://unsplash.com/photos/NaU8k9emQMI",
     age: "39"
 },
 {
@@ -72,6 +73,7 @@ bike_attributes = [
     description: "Le vélo de ma grand mère !",
     address: "374 Rue Léon Gambetta, 59000 Lille",
     category: "Vtc",
+    photo: "https://unsplash.com/photos/qJmm-PtJ7yA",
     age: "39"
 },
 {
@@ -79,6 +81,7 @@ bike_attributes = [
     description: "Le vélo de mon fils !",
     address: "77 Rue Philippe-Laurent Roland, 59000 Lille",
     category: "Bmx",
+    photo: "https://unsplash.com/photos/HPpj2190tGs",
     age: "39"
 },
 {
@@ -86,13 +89,63 @@ bike_attributes = [
     description: "Mon vélo de compétition hors du commun !",
     address: "Port Fluvial, 4ème Rue, 59000 Lille",
     category: "VTT",
+    photo: "https://unsplash.com/photos/YWu7WCjD8xI",
     age: "39"
 },
 {
     marque: "Peugeot",
-    description: "Le vélo de mon grand père; un vrai bijou !",
+    description: "Vélo qui roule vite!",
     address: "54 Rue du Général de la Bourdonnaye, 59000 Lille",
     category: "Route",
+    photo: "https://unsplash.com/photos/z5EGvle29FI",
+    age: "39"
+},
+{
+    marque: "Peugeot",
+    description: "Mon 1er vélo un vrai bijou !",
+    address: "5 Avenue Anatole France, 75007 Paris",
+    category: "Route",
+    photo: "https://unsplash.com/photos/AW9C16fLmgg",
+    age: "39"
+},
+{
+    marque: "Peugeot",
+    description: "mon vélo de course ",
+    address: "149 Rue de Sèvres, 75015 Paris",
+    category: "Route",
+    photo: "https://unsplash.com/photos/SpOQKI03PaI",
+    age: "39"
+},
+{
+    marque: "Peugeot",
+    description: "Le vélo de mon voisin !",
+    address: "Rue Fondary, 75015 Paris",
+    category: "Route",
+    photo: "https://unsplash.com/photos/L76qKKdj5Go",
+    age: "39"
+},
+{
+    marque: "Peugeot",
+    description: "Le vélo de compétition !",
+    address: "34 Rue de la Charité, 69002 Lyon",
+    category: "Route",
+    photo: "https://unsplash.com/photos/TTJNeS4th34",
+    age: "39"
+},
+{
+    marque: "Peugeot",
+    description: "Le vélo de ma tata ",
+    address: "6 Cours Albert Thomas, 69008 Lyon",
+    category: "Route",
+    photo: "https://unsplash.com/photos/VNQB89p1Rvs",
+    age: "39"
+},
+{
+    marque: "Peugeot",
+    description: "Le vélo de mon tonton; un vrai bijou !",
+    address: "5bis Place Jean Macé, 69007 Lyon",
+    category: "Route",
+    photo: "https://unsplash.com/photos/1i1APMzjVPg",
     age: "39"
 }
 ]
