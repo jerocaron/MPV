@@ -7,11 +7,16 @@
           <p><%= @profil.photo %></p>
         </div>
         <div class="col-xs-12 col-md-6 col-lg-6">
-            <h1 class="titleprofile"><%= @profil.first_name.upcase%> <%= @profil.last_name.upcase %></h1>
-            <p>Adresse : <%= @profil.address %></p>
-            <p>Email : <%= current_user.email %></p>
-            <p>Téléphone : <%= @profil.tel %></p>
-            <p>Iban : <%= @profil.iban %></p>
+          <% if @profil.first_name %>
+            <h1 class="titleprofile"><%= @profil.first_name.upcase%></h1>
+          <% end %> 
+          <% if @profil.last_name %>
+            <%= @profil.last_name.upcase %></h1>
+          <% end %>
+          <p>Adresse : <%= @profil.address %></p>
+          <p>Email : <%= current_user.email %></p>
+          <p>Téléphone : <%= @profil.tel %></p>
+          <p>Iban : <%= @profil.iban %></p>
         </div>
 
 

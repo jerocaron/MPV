@@ -8,4 +8,7 @@ class User < ApplicationRecord
   has_one :profil
   has_many :bikes
 
+  def profil
+    super || Profil.create(user: self)
+  end
 end
