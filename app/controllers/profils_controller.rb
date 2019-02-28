@@ -3,6 +3,10 @@ class ProfilsController < ApplicationController
     @profil = Profil.new
   end
 
+  def show
+    @profil = Profil.find(params[:id])
+  end
+
   def create
     @profil = Profil.new(profil_params)
     @profil.user = current_user

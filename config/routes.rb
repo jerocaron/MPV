@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   resources :bikes, only: [ :index, :create, :new, :show ] do
     resources :rents, only: [:new, :create, :index]
   end
-  resources :profils, only: [ :create, :new, :edit, :update ]
 
+  resources :profils, only: [ :create, :new, :edit, :update, :show ]
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

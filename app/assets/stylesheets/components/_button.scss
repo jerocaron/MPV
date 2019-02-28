@@ -1,9 +1,10 @@
 .btn-ghost {
-  color: #4A4A4A;
-  border: 1px solid #4A4A4A;
+  color: #0a0a0a;
+  border: 1px solid #0a0a0a;
+  border-color: #0a0a0a;
   padding: 8px 24px;
   border-radius: 50px;
-  font-weight: lighter;
+  font-weight: 700;
   opacity: 0.6;
   transition: opacity 0.3s ease;
 }
@@ -11,6 +12,10 @@
   opacity: 1;
 }
 
+.btn-ghost.buttonprofile {
+  margin-top: 15px;
+  width: 100%;
+}
 .btn-primary:active:focus {
   background-color: #041c51;
 }
@@ -86,12 +91,32 @@ fieldset[disabled] .btn-default.active {
   font-family: 'PT Sans','Helvetica Neue',Arial,sans-serif;
 }
 
+.btn-secondary {
+  font-weight: bold;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  text-decoration: underline;
+  color: #111111;
+}
+
+
 .btn-primary:hover{
  background-color: #041c51;
 }
 
+
+.btn-secondary:hover {
+  color: #041c51;
+}
+
 .btn.btn-primary:hover {
     opacity: 0.7;
+}
+
+.btn.btn-primary.nouscontacter{
+  background-color: rgba(0, 0, 0, 0.2);
+  font-size: 20px;
+  padding: 4px 30px;
 }
 
 .btn {

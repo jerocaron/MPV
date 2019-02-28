@@ -261,16 +261,16 @@ header .header-content .inner p {
     color: rgba(255,255,255,0.7);
 }
 
-#video-background {
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
-  width: auto;
-  height: auto;
-  z-index: 1;
-}
+// #video-background {
+//   position: absolute;
+//   right: 0;
+//   bottom: 0;
+//   min-width: 100%;
+//   min-height: 100%;
+//   width: auto;
+//   height: auto;
+//   z-index: 1;
+// }
 
 #video-background.collapsing {
   display:none;
