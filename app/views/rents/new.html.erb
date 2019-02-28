@@ -1,0 +1,18 @@
+<div class="container">
+  <div>
+    <h1><%= @bike.category %></h1>
+    <h2><%= @bike.description %></h2>
+    <%= cl_image_tag @bike.photo, height: 300, width: 400, crop: :fill %>
+</div>
+<div>
+  <h1>Louer ce vélo</h1>
+    <%= simple_form_for [@bike, @rent] do |f| %>
+    <%= f.input :start_date, placeholder: "A partir de..." %>
+  <%= f.input :end_date, placeholder: "Jusqu'au..." %>
+  <%= f.submit "Confirmez votre réservation", class: "btn btn-primary btn-lg btn-block btn-booking" %>
+    <% end %>
+</div>
+<div>
+   <%= link_to "Retourner à l'accueil", bikes_path, class: "btn btn-primary"%>
+</div>
+</div>
