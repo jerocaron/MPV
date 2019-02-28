@@ -13,3 +13,9 @@
 .alert-warning {
   background: $red;
 }
+
+
+.alert-danger {
+  background-color: rgba(132, 0, 0, 0.7);
+  border-color: rgba(132, 0, 0, 0.7) !important;
+}
