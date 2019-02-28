@@ -1,4 +1,6 @@
 class Profil < ApplicationRecord
+  mount_uploader :photo, PhotoUploader
+  
   belongs_to :user, optional: true
   has_many :bikes
   has_many :rents
