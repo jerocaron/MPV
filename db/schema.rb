@@ -10,11 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-<<<<<<< HEAD
-ActiveRecord::Schema.define(version: 2019_02_27_105830) do
-=======
 ActiveRecord::Schema.define(version: 2019_02_27_154016) do
->>>>>>> master
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -30,12 +26,9 @@ ActiveRecord::Schema.define(version: 2019_02_27_154016) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "photo"
-<<<<<<< HEAD
     t.integer "price_per_day"
-=======
     t.float "latitude"
     t.float "longitude"
->>>>>>> master
     t.index ["profil_id"], name: "index_bikes_on_profil_id"
   end
 
