@@ -1,5 +1,5 @@
 class Bike < ApplicationRecord
-  # mount_uploader :photo, PhotoUploader
+  mount_uploader :photo, PhotoUploader
 
   has_many :rents
   has_many :profils, through: :rents
