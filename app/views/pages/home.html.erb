@@ -9,27 +9,27 @@
        </div>
    </div>
 </header>
+  <div class= "container">
 
-<%= form_tag bikes_path, method: :get do %>
-  <%= text_field_tag :query,
-    params[:query],
-    class: "form-control",
-    placeholder: "Type your address and find bikes available around you ! "
-  %>
+<%= simple_form_for @bike, :url => root_path, :method => :get do |f| %>
+  <%= f.input :address, collection: ["Paris", "Lyon", "Lille"] %>
+  <%= f.button :submit %>
 <% end %>
 
-<div class = "row">
-  <div class="col-lg-08 col-lg-offset-2">
-    <div
-      id="map"
-      style="width: 70%;
-      height: 600px;"
-      data-markers="<%= @markers.to_json %>"
-      data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>"
-    ></div>
-  </div>
-</div>
 
+</div>
+  <div class = "row">
+    <div class="col-lg-08 col-lg-offset-2">
+      <div
+        id="map"
+        style="width: 70%;
+        height: 600px;"
+        data-markers="<%= @markers.to_json %>"
+        data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>"
+      ></div>
+    </div>
+  </div>
+ </div>
 <section id="rentabike">
   <div class="container">
     <div class="row">
