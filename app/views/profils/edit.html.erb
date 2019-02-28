@@ -3,7 +3,7 @@
     <div class="col-xs-12 col-lg-12">
       <h1>Editer mon profil</h1>
         <%= simple_form_for(@profil) do |f| %>
-        <%= f.input :first_name, label: "Prénom", placeholde: @profil.first_name, error: "Le prénom est requis" %>
+        <%= f.input :first_name, label: "Prénom", placeholder: @profil.first_name, error: "Le prénom est requis" %>
         <%= f.input :last_name, label: "Nom", placeholder: @profil.last_name, error: "Le nom est requis" %>
         <%= f.input :address, label: "Adresse", placeholder: @profil.address, error: "L'address est requise" %>
         <%= f.input :photo %>
