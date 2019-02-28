@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_02_26_140706) do
+ActiveRecord::Schema.define(version: 2019_02_27_105830) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -26,6 +26,7 @@ ActiveRecord::Schema.define(version: 2019_02_26_140706) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "photo"
+    t.integer "price_per_day"
     t.index ["profil_id"], name: "index_bikes_on_profil_id"
   end
 
@@ -37,6 +38,17 @@ ActiveRecord::Schema.define(version: 2019_02_26_140706) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["user_id"], name: "index_profils_on_user_id"
+  end
+
+  create_table "rents", force: :cascade do |t|
+    t.string "start_date"
+    t.string "end_date"
+    t.bigint "bike_id"
+    t.bigint "profil_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["bike_id"], name: "index_rents_on_bike_id"
+    t.index ["profil_id"], name: "index_rents_on_profil_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -53,4 +65,6 @@ ActiveRecord::Schema.define(version: 2019_02_26_140706) do
 
   add_foreign_key "bikes", "profils"
   add_foreign_key "profils", "users"
+  add_foreign_key "rents", "bikes"
+  add_foreign_key "rents", "profils"
 end

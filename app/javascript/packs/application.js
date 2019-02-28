@@ -1,1 +1,1 @@
-import "bootstrap";
+import { datePicker } from 'booking'
