@@ -1,7 +1,7 @@
 class PagesController < ApplicationController
   skip_before_action :authenticate_user!, only: :home
   def home
-    @bikes = Bike.where.not(latitude: nil, longitude: nil)
+    @bikes = Bike.all
 
     @markers = @bikes.map do |bike|
       {

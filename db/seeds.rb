@@ -65,6 +65,7 @@ bike_attributes = [
     description: "Le vélo de mon grand père; un vrai bijou !",
     address: "2 Avenue des Saules, 59160 Lille",
     category: "Route",
+    photo: "https://res.cloudinary.com/ddkwzbchj/image/upload/v1551362504/misael-moreno-1246215-unsplash.jpg",
     age: "39"
 },
 {
@@ -72,6 +73,7 @@ bike_attributes = [
     description: "Le vélo de ma grand mère !",
     address: "374 Rue Léon Gambetta, 59000 Lille",
     category: "Vtc",
+    photo: "https://res.cloudinary.com/ddkwzbchj/image/upload/v1551362504/mack-fox-musicfox-548897-unsplash.jpg",
     age: "39"
 },
 {
@@ -79,20 +81,71 @@ bike_attributes = [
     description: "Le vélo de mon fils !",
     address: "77 Rue Philippe-Laurent Roland, 59000 Lille",
     category: "Bmx",
+    photo: "https://res.cloudinary.com/ddkwzbchj/image/upload/v1551362504/asoggetti-1343167-unsplash.jpg",
     age: "39"
 },
 {
     marque: "Peugeot",
     description: "Mon vélo de compétition hors du commun !",
-    address: "Port Fluvial, 4ème Rue, 59000 Lille",
+    address: "60 Boulevard Vauban, 59800 Lille",
     category: "VTT",
+    photo: "https://res.cloudinary.com/ddkwzbchj/image/upload/v1551362503/adriana-gomez-407862-unsplash.jpg",
     age: "39"
 },
 {
     marque: "Peugeot",
-    description: "Le vélo de mon grand père; un vrai bijou !",
-    address: "54 Rue du Général de la Bourdonnaye, 59000 Lille",
+    description: "Vélo qui roule vite!",
+    address: "117 Avenue de Dunkerque, 59000 Lille",
     category: "Route",
+    photo: "https://res.cloudinary.com/ddkwzbchj/image/upload/v1551362503/linda-xu-599744-unsplash.jpg",
+    age: "39"
+},
+{
+    marque: "Peugeot",
+    description: "Mon 1er vélo un vrai bijou !",
+    address: "5 Avenue Anatole France, 75007 Paris",
+    category: "Route",
+    photo: "https://res.cloudinary.com/ddkwzbchj/image/upload/v1551362502/markus-spiske-1258983-unsplash.jpg",
+    age: "39"
+},
+{
+    marque: "Peugeot",
+    description: "mon vélo de course ",
+    address: "149 Rue de Sèvres, 75015 Paris",
+    category: "Route",
+    photo: "https://res.cloudinary.com/ddkwzbchj/image/upload/v1551362502/guillaume-camera-1129617-unsplash.jpg",
+    age: "39"
+},
+{
+    marque: "Peugeot",
+    description: "Le vélo de mon voisin !",
+    address: "Rue Fondary, 75015 Paris",
+    category: "Route",
+    photo: "https://res.cloudinary.com/ddkwzbchj/image/upload/v1551362502/carter-moorse-1367113-unsplash.jpg",
+    age: "39"
+},
+{
+    marque: "Peugeot",
+    description: "Le vélo de compétition !",
+    address: "34 Rue de la Charité, 69000 Lyon",
+    category: "Route",
+    photo: "https://res.cloudinary.com/ddkwzbchj/image/upload/v1551362501/zoltan-tasi-1165979-unsplash.jpg",
+    age: "39"
+},
+{
+    marque: "Peugeot",
+    description: "Le vélo de ma tata ",
+    address: "6 Cours Albert Thomas, 69000 Lyon",
+    category: "Route",
+    photo: "https://res.cloudinary.com/ddkwzbchj/image/upload/v1551362501/weiye-tan-1167263-unsplash.jpg",
+    age: "39"
+},
+{
+    marque: "Peugeot",
+    description: "Le vélo de mon tonton; un vrai bijou !",
+    address: "5bis Place Jean Macé, 69000 Lyon",
+    category: "Route",
+    photo: "https://res.cloudinary.com/ddkwzbchj/image/upload/v1551362504/shelley-pauls-1373471-unsplash.jpg",
     age: "39"
 }
 ]

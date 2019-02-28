@@ -1,0 +1,18 @@
+.loginview {
+  margin-top: 120px;
+  margin-bottom: 120px;
+  justify-content: center;
+}
+
+@media (min-width: 992px){
+  .loginview {
+    width: 600px;
+  }
+}
+
+@media (min-width: 768px){
+  .loginview {
+    width: 600px;
+  }
+}
+

@@ -4,7 +4,7 @@ class ProfilsController < ApplicationController
   end
 
   def show
-    @profil = Profil.find(params[:id])
+    @profil = current_user.profil
   end
 
   def create

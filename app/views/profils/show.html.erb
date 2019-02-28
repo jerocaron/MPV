@@ -1,26 +1,41 @@
-<div class="container">
+<div class="showprofile">
+  <div class= "profilinfo">
     <div class="row">
-        <div class="col-md-6">
-            <h1><%= @profil.first_name %></h1>
-            <h1><%= @profil.last_name %></h1>
-            <p><%= @profil.address %></p>
-            <div class="container">
-                <% @profil.bikes.each do |bike| %>
-                    <%= image_tag "#{bike.photo}" %>
-                <% end %>
-            </div>
-            <p><%= current_user.email %></p>
-            <p><%= @profil.tel %></p>
-            <p><%= @profil.iban %></p>
-            <p><%= @profil.photo %></p>
+      <div class="col-lg-10 col-lg-offset-1">
+        <div class="col-xs-12 col-md-6 col-lg-6">
+          <p>Ajouter boutton pour Photo, la photo doit s'afficher en dessous</p>
+          <p><%= @profil.photo %></p>
         </div>
+        <div class="col-xs-12 col-md-6 col-lg-6">
+          <% if @profil.first_name %>
+            <h1 class="titleprofile"><%= @profil.first_name.upcase%></h1>
+          <% end %> 
+          <% if @profil.last_name %>
+            <%= @profil.last_name.upcase %></h1>
+          <% end %>
+          <p>Adresse : <%= @profil.address %></p>
+          <p>Email : <%= current_user.email %></p>
+          <p>Téléphone : <%= @profil.tel %></p>
+          <p>Iban : <%= @profil.iban %></p>
+        </div>
+
+
+      </div>
+  </div>
+    <div class="col-lg-10 col-lg-offset-1">
+        <div class="col-xs-12 col-md-6 col-lg-4 text-center">
+          <% @profil.bikes.each do |bike| %>
+          <%= image_tag "#{bike.photo}" %>
+          <% end %>
+          <p>Pictures of my bike</p>
+        </div>
+      <br>
+      <div class="col-xs-12 text-center">
+        <%= link_to "Editer mon profil", edit_profil_path, class: "btn btn-primary"%>
+      </div>
+      <div class="col-xs-12 text-center">
+        <i class="fas fa-chevron-left"></i><%= link_to "Back Home", root_path, class: "btn btn-secondary"%>
+      </div>
     </div>
 </div>
-
-    <div class="row">
-        <div class="col-md-4 col-md-offset-4">
-            <div class="centered">
-                <%= link_to "Back Home", root_path, class: "btn btn-primary"%>
-            </div>
-        </div>
-    </div>
+</div>
