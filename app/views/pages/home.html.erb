@@ -9,6 +9,15 @@
        </div>
    </div>
 </header>
+
+<%= form_tag bikes_path, method: :get do %>
+  <%= text_field_tag :query,
+    params[:query],
+    class: "form-control",
+    placeholder: "Type your address and find bikes available around you ! "
+  %>
+<% end %>
+
 <div class = "row">
   <div class="col-lg-08 col-lg-offset-2">
     <div
