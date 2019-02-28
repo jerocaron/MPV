@@ -11,9 +11,9 @@
 </header>
   <div class= "container">
 
-<%= simple_form_for @bike, :url => root_path, :method => :get do |f| %>
+<%= simple_form_for 'search', :url => root_path, :method => :get do |f| %>
   <%= f.input :address, collection: ["Paris", "Lyon", "Lille"] %>
-  <%= f.button :submit %>
+  <%= f.button :submit, 'Rechercher', class: "btn btn-primary fullwidthbutton" %>
 <% end %>
 
 

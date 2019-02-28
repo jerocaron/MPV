@@ -1,8 +1,10 @@
 class PagesController < ApplicationController
   skip_before_action :authenticate_user!, only: :home
   def home
-    if params[:address].present?
-      search
+
+    if params[:search].present?
+
+      search(params[:search][:address])
     else
       @bikes = Bike.all
       @bike = Bike.new
@@ -18,9 +20,9 @@ class PagesController < ApplicationController
 
   private
 
-  def search
-     @bike = Bike.new
-     @bikes = Bike.where("address ILIKE ?", "%#{params[:address]}%")
+  def search(city)
+
+     @bikes = Bike.where("address ILIKE ?", "%#{city}%")
   #   @distance = Geocoder::Calculations.distance_between([@performance.profile.latitude, @performance.profile.longitude], [current_user.profile.latitude, current_user.profile.longitude])
   end
 end
