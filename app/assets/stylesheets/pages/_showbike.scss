@@ -1,10 +1,26 @@
-.contentshow{
-  margin-top: 120px;
-  display: flex;
-}
-
-
 .showbike {
+  margin-top: 120px;
+  margin-bottom: 230px;
+}
+
+
+.bikeinfo {
+ display: flex;
+  justify-content: left;
 
 }
 
+.sizeboxbike {
+  width: 1200px;
+  justify-content:center;
+}
+
+.backtolist{
+  text-align: center;
+  margin-top: 50px;
+}
+
+
+.hrbike {
+  margin-inline-start: 0;
+}
