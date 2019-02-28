@@ -4,8 +4,8 @@ class BikesController < ApplicationController
 
     @markers = @bikes.map do |bike|
       {
-        lng: flat.longitude,
-        lat: flat.latitude
+        lng: bike.longitude,
+        lat: bike.latitude
       }
     end
   end
