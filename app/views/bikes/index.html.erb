@@ -1,14 +1,14 @@
 <div class ="container">
   <h1>Bikes list</h1>
 
-  <ul>
-  <% @bikes.each do |bike| %>
-      <li><%= link_to bike.category, bike_path(bike.id)%>
-        </li>
+<% if current_user %>
+  <% @bikes.where.not(latitude: nil, longitude: nil).where(profil_id: current_user.profil.id).each do |bike| %>
+    <li><%= link_to bike.category, bike_path(bike.id)%></li>
   <% end %>
-  </ul>
+<% end %>
 
     <%= link_to "Create bike", new_bike_path, class: "btn btn-primary" %>
     <%= link_to "Sign out", destroy_user_session_path, class: "btn btn-primary", method: :delete %>
 
 </div>
+
