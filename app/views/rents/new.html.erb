@@ -2,19 +2,20 @@
   <div>
     <h1><%= @bike.category %></h1>
     <h2><%= @bike.description %></h2>
+    <h2><%= @bike.price_per_day %></h2>
     <%= cl_image_tag @bike.photo, height: 300, width: 400, crop: :fill %>
   </div>
   <div>
 
  <% if @coming_rents.count == 0 %>
-  <h2> "J'attends votre réservation..." </h2>
+  <h4> J'attends vos réservations... </h4>
   <% elsif @coming_rents.count < 3 %>
-  <h2> "N'attendez pas pour me réserver...." </h2>
+  <h4> Vérifiez, je suis déjà réservé: </h4>
   <% else %>
-  <h2> "Je suis très demandé..." </h2>
+  <h4> Attention, je suis très demandé: </h4>
   <% end %>
 
-  <ul>
+  <ul style="list-style: none;">
   <% @periods.each do |booking| %>
     <% if booking[0].to_date >= Date.today %>
       <li><%= "Je suis réservé du #{booking[0].to_date} au #{booking[1].to_date}" %>
@@ -24,10 +25,11 @@
   </ul>
 </div>
   <div>
-    <h1>Louer ce vélo</h1>
+    <h3><%= "Louez moi pour #{@bike.price_per_day}€ par jour" %></h3>
       <%= simple_form_for [@bike, @rent] do |f| %>
-      <%= f.input :period, label: "Votre période de location", placeholder: "Sélectionnez votre période..." %>
-      <%= f.submit "Confirmez votre réservation", class: "btn btn-primary btn-lg btn-block btn-booking" %>
+        <%= f.input :period, label: "Votre période de location", placeholder: "Sélectionnez votre période..." %>
+        <p id="booking_price"></p>
+        <%= f.submit "Confirmez votre réservation", class: "btn btn-primary btn-lg btn-block btn-booking" %>
       <% end %>
   </div>
 
@@ -36,3 +38,4 @@
 </div>
 </div>
 <div id="periods" data-periods="<%= @periods.to_json %>"></div>
+<div id="ppd"><%= @bike.price_per_day %></div>
