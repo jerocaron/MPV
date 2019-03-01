@@ -19,7 +19,10 @@
                           <h2><%= bike.description.first(30) %></h2>
                           <p><%= bike.address %></p>
                         </div>
-                        <i class="fas fa-user-circle card-user"></i>
+                        <div class="card-avatar"><%= cl_image_tag(bike.profil.photo,:transformation=>[
+                          {:width=>350, :height=>350, :gravity=>"face", :radius=>"max", :crop=>"crop"},
+                          {:width=>50, :crop=>"scale"}], class: "imagestyleprofil") %>
+                        </div>
                       </div>
                     </div>
                   </div>

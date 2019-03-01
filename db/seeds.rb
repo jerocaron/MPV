@@ -152,3 +152,197 @@ bike_attributes = [
 
 Bike.create!(bike_attributes)
 puts 'Finished!'
+
+
+
+User.create!(user_attributes)
+
+user_attributes = [
+{
+    email: "marcel@marcel.com",
+    password: "azerty"
+},
+{
+    email: "marcel2@marcel.com",
+    password: "azerty"
+},
+{
+    email: "marcel3@marcel.com",
+    password: "azerty"
+},
+{
+    email: "marcel4@marcel.com",
+    password: "azerty"
+},
+{
+    email: "marcel5@marcel.com",
+    password: "azerty"
+},
+{
+    email: "marcel6@marcel.com",
+    password: "azerty"
+},
+{
+    email: "marcel7@marcel.com",
+    password: "azerty"
+},
+{
+    email: "marcel8@marcel.com",
+    password: "azerty"
+},
+{
+    email: "marcel9@marcel.com",
+    password: "azerty"
+},
+{
+    email: "marcel10@marcel.com",
+    password: "azerty"
+}]
+
+Profil.create!(profil_attributes)
+
+profil_attributes = [
+{
+    first_name: "Marcel",
+    last_name: "Sans bas",
+    address: "#{Faker::Address.street_address}, #{Faker::Address.city}",
+    photo: "https://mediasv6.truffaut.com/Articles/jpg/0588000/588803_003_1000.jpg"
+},
+{
+    first_name: "Marcel2",
+    last_name: "Sans bas",
+    address: "#{Faker::Address.street_address}, #{Faker::Address.city}",
+    photo: "https://mediasv6.truffaut.com/Articles/jpg/0588000/588803_003_1000.jpg"
+},
+{
+    first_name: "Marcel3",
+    last_name: "Sans bas",
+    address: "#{Faker::Address.street_address}, #{Faker::Address.city}",
+    photo: "https://mediasv6.truffaut.com/Articles/jpg/0588000/588803_003_1000.jpg"
+},
+{
+    first_name: "Marcel4",
+    last_name: "Sans bas",
+    address: "#{Faker::Address.street_address}, #{Faker::Address.city}",
+    photo: "https://mediasv6.truffaut.com/Articles/jpg/0588000/588803_003_1000.jpg"
+},
+{
+    first_name: "Marcel5",
+    last_name: "Sans bas",
+    address: "#{Faker::Address.street_address}, #{Faker::Address.city}",
+    photo: "https://mediasv6.truffaut.com/Articles/jpg/0588000/588803_003_1000.jpg"
+},
+{
+    first_name: "Marcel6",
+    last_name: "Sans bas",
+    address: "#{Faker::Address.street_address}, #{Faker::Address.city}",
+    photo: "https://mediasv6.truffaut.com/Articles/jpg/0588000/588803_003_1000.jpg"
+},
+{
+    first_name: "Marcel7",
+    last_name: "Sans bas",
+    address: "#{Faker::Address.street_address}, #{Faker::Address.city}",
+    photo: "https://mediasv6.truffaut.com/Articles/jpg/0588000/588803_003_1000.jpg"
+},
+{
+    first_name: "Marcel8",
+    last_name: "Sans bas",
+    address: "#{Faker::Address.street_address}, #{Faker::Address.city}",
+    photo: "https://mediasv6.truffaut.com/Articles/jpg/0588000/588803_003_1000.jpg"
+},
+{
+    first_name: "Marcel9",
+    last_name: "Sans bas",
+    address: "#{Faker::Address.street_address}, #{Faker::Address.city}",
+    photo: "https://mediasv6.truffaut.com/Articles/jpg/0588000/588803_003_1000.jpg"
+},
+{
+    first_name: "Marcel10",
+    last_name: "Sans bas",
+    address: "#{Faker::Address.street_address}, #{Faker::Address.city}",
+    photo: "https://mediasv6.truffaut.com/Articles/jpg/0588000/588803_003_1000.jpg"
+}]
+
+Bike.create!(bike_attributes)
+
+bike_attributes = [
+{
+    marque: "Peugeot",
+    description: "Le vélo de mon grand père; un vrai bijou !",
+    address: "2 Avenue des Saules, 59160 Lille",
+    category: "Route",
+    remote_photo_url: "https://res.cloudinary.com/ddkwzbchj/image/upload/v1551362504/misael-moreno-1246215-unsplash.jpg",
+    age: "39"
+},
+{
+    marque: "Peugeot",
+    description: "Le vélo2 de mon grand père; un vrai bijou !",
+    address: "2 Avenue des Saules, 59160 Lille",
+    category: "Route",
+    remote_photo_url: "https://res.cloudinary.com/ddkwzbchj/image/upload/v1551362504/misael-moreno-1246215-unsplash.jpg",
+    age: "39"
+},
+{
+    marque: "Peugeot",
+    description: "Le vélo3 de mon grand père; un vrai bijou !",
+    address: "2 Avenue des Saules, 59160 Lille",
+    category: "Route",
+    remote_photo_url: "https://res.cloudinary.com/ddkwzbchj/image/upload/v1551362504/misael-moreno-1246215-unsplash.jpg",
+    age: "39"
+},
+{
+    marque: "Peugeot",
+    description: "Le vélo4 de mon grand père; un vrai bijou !",
+    address: "2 Avenue des Saules, 59160 Lille",
+    category: "Route",
+    remote_photo_url: "https://res.cloudinary.com/ddkwzbchj/image/upload/v1551362504/misael-moreno-1246215-unsplash.jpg",
+    age: "39"
+},
+{
+    marque: "Peugeot",
+    description: "Le vélo5 de mon grand père; un vrai bijou !",
+    address: "2 Avenue des Saules, 59160 Lille",
+    category: "Route",
+    remote_photo_url: "https://res.cloudinary.com/ddkwzbchj/image/upload/v1551362504/misael-moreno-1246215-unsplash.jpg",
+    age: "39"
+},
+{
+    marque: "Peugeot",
+    description: "Le vélo6 de mon grand père; un vrai bijou !",
+    address: "2 Avenue des Saules, 59160 Lille",
+    category: "Route",
+    remote_photo_url: "https://res.cloudinary.com/ddkwzbchj/image/upload/v1551362504/misael-moreno-1246215-unsplash.jpg",
+    age: "39"
+},
+{
+    marque: "Peugeot",
+    description: "Le vélo7 de mon grand père; un vrai bijou !",
+    address: "2 Avenue des Saules, 59160 Lille",
+    category: "Route",
+    remote_photo_url: "https://res.cloudinary.com/ddkwzbchj/image/upload/v1551362504/misael-moreno-1246215-unsplash.jpg",
+    age: "39"
+},
+{
+    marque: "Peugeot",
+    description: "Le vélo8 de mon grand père; un vrai bijou !",
+    address: "2 Avenue des Saules, 59160 Lille",
+    category: "Route",
+    remote_photo_url: "https://res.cloudinary.com/ddkwzbchj/image/upload/v1551362504/misael-moreno-1246215-unsplash.jpg",
+    age: "39"
+},
+{
+    marque: "Peugeot",
+    description: "Le vélo9 de mon grand père; un vrai bijou !",
+    address: "2 Avenue des Saules, 59160 Lille",
+    category: "Route",
+    remote_photo_url: "https://res.cloudinary.com/ddkwzbchj/image/upload/v1551362504/misael-moreno-1246215-unsplash.jpg",
+    age: "39"
+},
+{
+    marque: "Peugeot",
+    description: "Le vélo10 de mon grand père; un vrai bijou !",
+    address: "2 Avenue des Saules, 59160 Lille",
+    category: "Route",
+    remote_photo_url: "https://res.cloudinary.com/ddkwzbchj/image/upload/v1551362504/misael-moreno-1246215-unsplash.jpg",
+    age: "39"
+}]
