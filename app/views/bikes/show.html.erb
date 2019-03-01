@@ -18,6 +18,8 @@
         <p>Description : <%= @bike.description %></p>
         <br>
         <%= link_to "Réservez ce vélo", new_bike_rent_path(bike_id: @bike.id), class: "btn btn-primary"%>
+        <%= link_to "Mettez le à jour", edit_bike_path(bike_id: @bike.id), class: "btn btn-primary"%>
+        <%= link_to "Détruisez le", bike_path(bike_id: @bike.id), class: "btn btn-primary", method: :delete%>
       </div>
 
 
