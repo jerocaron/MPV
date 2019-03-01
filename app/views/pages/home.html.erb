@@ -3,19 +3,21 @@
        <div class="inner">
            <h1 class="cursive">Louez facilement votre vélo</h1>
            <hr>
-      <a href="#rentabike" class="btn btn-primary btn-xl">Louer un vélo</a>&nbsp; <a href="#one" class="btn btn-primary btn-xl page-scroll">Louer ton vélo</a>
+      <a href="#rentabike" class="btn btn-primary btn-xl">Louer un vélo</a>&nbsp; <a href="bikes" class="btn btn-primary btn-xl page-scroll">Louer ton vélo</a>
       <br>
-           <a href="#" class="btn btn-primary btn-xl geolocalisation">Me géolocaliser <i class="fas fa-map-marker-alt"></i></a>
+
        </div>
    </div>
 </header>
-<div class= "container">
-  <div class="cards_geoloc">
-    <%= simple_form_for 'search', :url => root_path, :method => :get do |f| %>
-      <%= f.input :address, label: 'Choix de votre ville', collection: ["Paris", "Lyon", "Lille"] %>
-      <%= f.button :submit, 'Rechercher', class: "btn btn-primary fullwidthbutton" %>
-    <% end %>
-
+ <section id="rentabike">
+  <div class= "container">
+    <div class="search_bar">
+      <%= simple_form_for 'search', :url => root_path, :method => :get do |f| %>
+        <%= f.input :address, label: 'Choix de votre ville', collection: ["Paris", "Lyon", "Lille"] %>
+        <%= f.button :submit, 'Rechercher', class: "btn btn-primary fullwidthbutton" %>
+      <% end %>
+    </div>
+<hr>
     <div class = "row">
       <div class="col-lg-08 col-lg-offset-2">
         <div
@@ -24,15 +26,15 @@
           height: 600px;"
           data-markers="<%= @markers.to_json %>"
           data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>">
+
         </div>
         </div>
       </div>
-    </div>
   </div>
  </div>
 </div>
+<hr>
 
-<section id="rentabike">
   <div class="container">
     <div class="row">
 
