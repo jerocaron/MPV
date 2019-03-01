@@ -1,7 +1,7 @@
 class Bike < ApplicationRecord
   mount_uploader :photo, PhotoUploader
 
-  has_many :rents
+  has_many :rents, dependent: :destroy
   has_many :profils, through: :rents
   belongs_to :profil, optional: true
   validates :marque, presence: true
