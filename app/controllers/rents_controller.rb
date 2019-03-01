@@ -12,7 +12,14 @@ class RentsController < ApplicationController
   def new
     @bike = Bike.find(params[:bike_id])
     @periods = @bike.rents.map { |rent| rent.period.split(' to ') }.uniq
+    @rents = Bike.find(params[:bike_id]).rents
     @rent = Rent.new
+    @coming_rents = []
+    @periods.each do |period|
+      if period[0].to_date > 0
+        @coming_rents << period
+      end
+    end
   end
 
   def create
@@ -21,7 +28,7 @@ class RentsController < ApplicationController
     @rent.profil = current_user.profil
     @rent.bike = @bike
     if @rent.save
-      redirect_to bike_rents_path(@rent)
+      redirect_to new_bike_rent_path(@bike)
     else
       render :new
     end
