@@ -35,22 +35,18 @@
     <div class="row">
 
     <% @bikes.each do |bike| %>
-      <div class="col-xs-12 col-sm-4">
-        <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.1)), url(<%= bike.photo %>);">
-          <div class="card-category"><%= bike.category %></div>
-          <div class="card-description">
-            <h2><%= bike.description.first(30) %></h2>
-            <p><%= bike.address %></p>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star-half-alt"></i>
+      <%= link_to(bike_path(bike.id)) do %>
+        <div class="col-xs-12 col-sm-4">
+          <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.1)), url(<%= bike.photo %>);">
+            <div class="card-category"><%= bike.category %></div>
+            <div class="card-description">
+              <h2><%= bike.description.first(30) %></h2>
+              <p><%= bike.address %></p>
+            </div>
+            <i class="fas fa-user-circle card-user"></i>
           </div>
-          <i class="fas fa-user-circle card-user"></i>
-          <a class="card-link" href="#" ></a>
         </div>
-      </div>
+      <% end %>
     <% end %>
   </div>
 </section>
