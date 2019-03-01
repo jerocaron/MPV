@@ -9,27 +9,29 @@
        </div>
    </div>
 </header>
-  <div class= "container">
+<div class= "container">
+  <div class="cards_geoloc">
+    <%= simple_form_for 'search', :url => root_path, :method => :get do |f| %>
+      <%= f.input :address, label: 'Choix de votre ville', collection: ["Paris", "Lyon", "Lille"] %>
+      <%= f.button :submit, 'Rechercher', class: "btn btn-primary fullwidthbutton" %>
+    <% end %>
 
-<%= simple_form_for 'search', :url => root_path, :method => :get do |f| %>
-  <%= f.input :address, collection: ["Paris", "Lyon", "Lille"] %>
-  <%= f.button :submit, 'Rechercher', class: "btn btn-primary fullwidthbutton" %>
-<% end %>
-
-
-</div>
-  <div class = "row">
-    <div class="col-lg-08 col-lg-offset-2">
-      <div
-        id="map"
-        style="width: 70%;
-        height: 600px;"
-        data-markers="<%= @markers.to_json %>"
-        data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>"
-      ></div>
+    <div class = "row">
+      <div class="col-lg-08 col-lg-offset-2">
+        <div
+          id="map"
+          style="width: 70%;
+          height: 600px;"
+          data-markers="<%= @markers.to_json %>"
+          data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>">
+        </div>
+        </div>
+      </div>
     </div>
   </div>
  </div>
+</div>
+
 <section id="rentabike">
   <div class="container">
     <div class="row">
