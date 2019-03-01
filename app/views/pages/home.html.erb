@@ -3,7 +3,7 @@
        <div class="inner">
            <h1 class="cursive">Louez facilement votre vélo</h1>
            <hr>
-      <a href="#rentabike" class="btn btn-primary btn-xl">Louer un vélo</a>&nbsp; <a href="bikes" class="btn btn-primary btn-xl page-scroll">Louer ton vélo</a>
+      <a href="#rentabike" class="btn btn-primary btn-xl button_background">Louer un vélo</a>&nbsp; <a href="bikes" class="btn btn-primary btn-xl page-scroll button_background">Louer ton vélo</a>
       <br>
 
        </div>
@@ -14,7 +14,7 @@
     <div class="search_bar">
       <%= simple_form_for 'search', :url => root_path, :method => :get do |f| %>
         <%= f.input :address, label: 'Choix de votre ville', collection: ["Paris", "Lyon", "Lille"] %>
-        <%= f.button :submit, 'Rechercher', class: "btn btn-primary fullwidthbutton" %>
+        <%= f.button :submit, 'Rechercher', class: "btn btn-primary fullwidthbutton"%>
       <% end %>
     </div>
 <hr>
