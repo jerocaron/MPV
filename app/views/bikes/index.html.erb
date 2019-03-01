@@ -1,14 +1,41 @@
 <div class ="container">
-  <h1>Bikes list</h1>
+  <div class="bikesindex">
+    <div class="row">
+    <div class="col-xs-12 col-md-12 col-lg-12">
+      <h1>Liste de mes vélos</h1>
+      <hr>
+    </div>
+      <div class="col-lg-10 col-lg-offset-1">
+        <div class="col-xs-4 col-md-4 col-lg-4 cardsbikes">
+          <% if current_user %>
+            <% @bikes.where.not(latitude: nil, longitude: nil).where(profil_id: current_user.profil.id).each do |bike| %>
+              <div class="container">
+                <%= link_to(bike_path(bike.id)) do %>  
+                  <div class="row">
+                    <div class="col-xs-12 col-sm-4">
+                      <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.1)), url(<%= bike.photo %>);">
+                        <div class="card-category"><%= bike.category %></div>
+                        <div class="card-description">
+                          <h2><%= bike.description.first(30) %></h2>
+                          <p><%= bike.address %></p>
+                        </div>
+                        <i class="fas fa-user-circle card-user"></i>
+                      </div>
+                    </div>
+                  </div>
+                <% end %>
+              </div>
+            <% end %>
+          <% end %>
+        </div>
+        </div>
 
-<% if current_user %>
-  <% @bikes.where.not(latitude: nil, longitude: nil).where(profil_id: current_user.profil.id).each do |bike| %>
-    <li><%= link_to bike.category, bike_path(bike.id)%></li>
-  <% end %>
-<% end %>
 
-    <%= link_to "Create bike", new_bike_path, class: "btn btn-primary" %>
-    <%= link_to "Sign out", destroy_user_session_path, class: "btn btn-primary", method: :delete %>
+    <div class="col-xs-12 col-md-12 col-lg-12">
+      <%= link_to "Créer un vélo", new_bike_path, class: "btn btn-primary" %>
+    </div>
 
+
+ </div>
 </div>
 
