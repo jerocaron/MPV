@@ -28,7 +28,7 @@ class ProfilsController < ApplicationController
   def update
     @profil = Profil.find(params[:id])
     @profil.update(profil_params)
-    redirect_to bikes_path
+    redirect_to profil_path(@profil)
   end
 
 private

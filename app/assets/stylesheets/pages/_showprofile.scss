@@ -1,6 +1,6 @@
 .showprofile{
   margin-top: 120px;
-  margin-bottom: 120px;
+  margin-bottom: 140px;
   display:flex;
   justify-content: center;
 }
@@ -8,4 +8,15 @@
 .titleprofile{
   line-height: 0px;
   margin-bottom:35px;
+}
+
+
+.sizeboxprofile {
+  width: 900px;
+  justify-content:center;
+}
+
+
+.imagestyleprofil {
+  border-radius: 50%;
 }
